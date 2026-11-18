@@ -1,0 +1,257 @@
+[
+ {
+  "id": 1,
+  "name": "Wireless Earbuds",
+  "category": "electronics",
+  "price": 1999,
+  "mrp": 2999,
+  "rating": 4.4,
+  "image": "images/p1.jpg",
+  "description": "Compact earbuds with deep bass and a charging case.",
+  "specs": [
+   "Battery: 24 hours with case",
+   "Bluetooth 5.3",
+   "Water resistant IPX4"
+  ]
+ },
+ {
+  "id": 2,
+  "name": "Smart Watch",
+  "category": "electronics",
+  "price": 3499,
+  "mrp": 4999,
+  "rating": 4.2,
+  "image": "images/p2.jpg",
+  "description": "Fitness watch with heart-rate and sleep tracking.",
+  "specs": [
+   "1.7 inch display",
+   "7 day battery",
+   "Water resistant 5 ATM"
+  ]
+ },
+ {
+  "id": 3,
+  "name": "Bluetooth Speaker",
+  "category": "electronics",
+  "price": 1499,
+  "mrp": 2199,
+  "rating": 4.5,
+  "image": "images/p3.jpg",
+  "description": "Portable speaker with 360 degree sound.",
+  "specs": [
+   "10 W output",
+   "12 hours playback",
+   "USB-C charging"
+  ]
+ },
+ {
+  "id": 4,
+  "name": "Power Bank 10000mAh",
+  "category": "electronics",
+  "price": 999,
+  "mrp": 1499,
+  "rating": 4.3,
+  "image": "images/p4.jpg",
+  "description": "Slim power bank with fast charging.",
+  "specs": [
+   "10000 mAh",
+   "18 W fast charge",
+   "Dual USB output"
+  ]
+ },
+ {
+  "id": 5,
+  "name": "Gaming Mouse",
+  "category": "electronics",
+  "price": 799,
+  "mrp": 1199,
+  "rating": 4.1,
+  "image": "images/p5.jpg",
+  "description": "Ergonomic mouse with adjustable DPI.",
+  "specs": [
+   "Up to 6400 DPI",
+   "6 programmable buttons",
+   "RGB lighting"
+  ]
+ },
+ {
+  "id": 6,
+  "name": "Cotton T-Shirt",
+  "category": "fashion",
+  "price": 499,
+  "mrp": 799,
+  "rating": 4.0,
+  "image": "images/p6.jpg",
+  "description": "Soft round-neck t-shirt for everyday wear.",
+  "specs": [
+   "100% cotton",
+   "Regular fit",
+   "Machine washable"
+  ]
+ },
+ {
+  "id": 7,
+  "name": "Denim Jacket",
+  "category": "fashion",
+  "price": 1799,
+  "mrp": 2499,
+  "rating": 4.3,
+  "image": "images/p7.jpg",
+  "description": "Classic blue denim jacket with button front.",
+  "specs": [
+   "Stretch denim",
+   "Two chest pockets",
+   "Regular fit"
+  ]
+ },
+ {
+  "id": 8,
+  "name": "Running Shoes",
+  "category": "fashion",
+  "price": 2499,
+  "mrp": 3299,
+  "rating": 4.6,
+  "image": "images/p8.jpg",
+  "description": "Lightweight shoes with cushioned sole.",
+  "specs": [
+   "Breathable mesh",
+   "Anti-slip sole",
+   "Sizes 6 to 11"
+  ]
+ },
+ {
+  "id": 9,
+  "name": "College Backpack",
+  "category": "fashion",
+  "price": 1299,
+  "mrp": 1799,
+  "rating": 4.4,
+  "image": "images/p9.jpg",
+  "description": "Spacious backpack with laptop compartment.",
+  "specs": [
+   "30 litre capacity",
+   "Fits 15.6 inch laptop",
+   "Water resistant fabric"
+  ]
+ },
+ {
+  "id": 10,
+  "name": "Python Programming",
+  "category": "books",
+  "price": 449,
+  "mrp": 599,
+  "rating": 4.5,
+  "image": "images/p10.jpg",
+  "description": "Beginner friendly guide with practice programs.",
+  "specs": [
+   "420 pages",
+   "Paperback",
+   "English"
+  ]
+ },
+ {
+  "id": 11,
+  "name": "Data Structures Made Easy",
+  "category": "books",
+  "price": 399,
+  "mrp": 550,
+  "rating": 4.4,
+  "image": "images/p11.jpg",
+  "description": "Arrays, linked lists, trees and graphs explained simply.",
+  "specs": [
+   "380 pages",
+   "Paperback",
+   "English"
+  ]
+ },
+ {
+  "id": 12,
+  "name": "AI Basics",
+  "category": "books",
+  "price": 549,
+  "mrp": 699,
+  "rating": 4.2,
+  "image": "images/p12.jpg",
+  "description": "Introduction to machine learning and AI concepts.",
+  "specs": [
+   "350 pages",
+   "Paperback",
+   "English"
+  ]
+ },
+ {
+  "id": 13,
+  "name": "Aptitude Practice Book",
+  "category": "books",
+  "price": 299,
+  "mrp": 399,
+  "rating": 4.0,
+  "image": "images/p13.jpg",
+  "description": "Placement preparation questions with solutions.",
+  "specs": [
+   "500+ questions",
+   "Paperback",
+   "English"
+  ]
+ },
+ {
+  "id": 14,
+  "name": "Steel Water Bottle",
+  "category": "home",
+  "price": 349,
+  "mrp": 499,
+  "rating": 4.5,
+  "image": "images/p14.jpg",
+  "description": "Insulated bottle keeps drinks cold or hot.",
+  "specs": [
+   "750 ml",
+   "Stainless steel",
+   "Leak proof lid"
+  ]
+ },
+ {
+  "id": 15,
+  "name": "Study Desk Lamp",
+  "category": "home",
+  "price": 699,
+  "mrp": 999,
+  "rating": 4.3,
+  "image": "images/p15.jpg",
+  "description": "LED lamp with adjustable brightness.",
+  "specs": [
+   "3 brightness levels",
+   "Flexible neck",
+   "USB powered"
+  ]
+ },
+ {
+  "id": 16,
+  "name": "Coffee Mug Set",
+  "category": "home",
+  "price": 399,
+  "mrp": 599,
+  "rating": 4.1,
+  "image": "images/p16.jpg",
+  "description": "Set of 4 ceramic mugs.",
+  "specs": [
+   "Set of 4",
+   "Microwave safe",
+   "300 ml each"
+  ]
+ },
+ {
+  "id": 17,
+  "name": "Cotton Bedsheet",
+  "category": "home",
+  "price": 899,
+  "mrp": 1299,
+  "rating": 4.2,
+  "image": "images/p17.jpg",
+  "description": "Double bed sheet with two pillow covers.",
+  "specs": [
+   "Cotton blend",
+   "Double bed size",
+   "Machine washable"
+  ]
+ }
+]

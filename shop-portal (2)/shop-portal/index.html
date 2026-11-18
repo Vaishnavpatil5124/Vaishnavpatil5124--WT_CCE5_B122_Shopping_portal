@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>go:) kart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header stays; only #app changes (SPA) -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="#/home" class="brand">
+        <span class="brand-mark">g</span>
+        <span>go:) kart<small>Everything for students</small></span>
+      </a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="#/home" data-route="home">Home</a>
+        <div class="dropdown">
+          <button id="deptBtn" class="dropdown-btn" aria-expanded="false">Categories &#9662;</button>
+          <ul id="deptMenu" class="dropdown-menu"></ul>
+        </div>
+        <a href="#/shop" data-route="shop">Shop</a>
+        <a href="#/orders" data-route="orders">Orders</a>
+        <a href="#/cart" data-route="cart">Cart <span id="cartCount" class="count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container"><p class="loading">Loading...</p></main>
+  <div id="toast" class="toast"></div>
+
+  <footer class="site-footer">
+    <div class="container"><p>&copy; 2026 go:) kart | Student mini project</p></div>
+  </footer>
+
+  <!-- ===== View templates (cloned into #app by the router) ===== -->
+  <template id="tpl-home">
+    <section class="hero">
+      <p class="tag">Student Sale</p>
+      <h1>Shop smart. Save more.</h1>
+      <p>Gadgets, fashion, books and home essentials. Use code <strong>SAVE10</strong> for 10% off.</p>
+      <a href="#/shop" class="btn">Start Shopping</a>
+    </section>
+    <h2 class="section-title">Shop by Category</h2>
+    <div id="homeCats" class="card-grid"></div>
+    <h2 class="section-title">Top Rated Products</h2>
+    <div id="homeTop" class="product-grid"></div>
+  </template>
+
+  <template id="tpl-shop">
+    <h2 class="section-title">Products</h2>
+    <div class="toolbar">
+      <select id="catFilter" aria-label="Category"></select>
+      <input type="search" id="search" placeholder="Search products...">
+      <select id="sort" aria-label="Sort">
+        <option value="default">Sort: Default</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+        <option value="rating">Top Rated</option>
+      </select>
+    </div>
+    <p id="resultCount" class="empty"></p>
+    <div id="productGrid" class="product-grid"></div>
+  </template>
+
+  <template id="tpl-product">
+    <p class="crumb"><a href="#/shop">Shop</a> / <a id="crumbCat" href="#/shop"></a></p>
+    <div class="product-page">
+      <div class="product-photo"><img id="pImg" alt=""></div>
+      <div>
+        <h2 id="pName"></h2>
+        <span id="pBadge" class="badge"></span>
+        <p id="pRating" class="rating"></p>
+        <div id="pPrice"></div>
+        <p id="pDesc" class="pdesc"></p>
+        <div class="actions">
+          <button id="pAdd" class="btn">Add to Cart</button>
+          <button id="pBuy" class="btn btn-light">Buy Now</button>
+        </div>
+        <div id="pAcc"></div>
+      </div>
+    </div>
+    <h2 class="section-title">You may also like</h2>
+    <div id="related" class="product-grid"></div>
+  </template>
+
+  <template id="tpl-cart">
+    <h2 class="section-title">Your Cart</h2>
+    <div id="cartContent"></div>
+  </template>
+
+  <template id="tpl-checkout">
+    <div class="two-col">
+      <section>
+        <h2 class="section-title">Checkout</h2>
+        <form id="checkoutForm" novalidate>
+          <div class="field"><label for="name">Full name</label><input type="text" id="name"><span class="error" id="nameError"></span></div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email"><span class="error" id="emailError"></span></div>
+          <div class="field"><label for="phone">Phone (10 digits)</label><input type="text" id="phone" maxlength="10"><span class="error" id="phoneError"></span></div>
+          <div class="field"><label for="address">Delivery address</label><textarea id="address" rows="3"></textarea><span class="error" id="addressError"></span></div>
+          <div class="field"><label for="pincode">Pincode</label><input type="text" id="pincode" maxlength="6"><span class="error" id="pincodeError"></span></div>
+          <div class="field">
+            <label for="payment">Payment method</label>
+            <select id="payment">
+              <option value="">-- Select --</option>
+              <option value="COD">Cash on Delivery</option>
+              <option value="UPI">UPI</option>
+              <option value="Card">Debit / Credit Card</option>
+            </select>
+            <span class="error" id="paymentError"></span>
+          </div>
+          <div class="field hidden" id="upiField"><label for="upi">UPI ID</label><input type="text" id="upi" placeholder="name@bank"><span class="error" id="upiError"></span></div>
+          <button type="submit" class="btn">Place Order</button>
+        </form>
+      </section>
+      <aside><h2 class="section-title">Order Summary</h2><div id="summaryBox"></div></aside>
+    </div>
+  </template>
+
+  <template id="tpl-orders">
+    <h2 class="section-title">My Orders</h2>
+    <div id="orderList"></div>
+  </template>
+
+  <template id="tpl-404">
+    <h2 class="section-title">Page not found</h2>
+    <p>This route does not exist. <a href="#/home">Go back home</a>.</p>
+  </template>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

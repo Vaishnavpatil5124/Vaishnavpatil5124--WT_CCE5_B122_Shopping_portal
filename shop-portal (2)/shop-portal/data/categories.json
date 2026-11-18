@@ -1,0 +1,22 @@
+[
+ {
+  "id": "electronics",
+  "name": "Electronics",
+  "icon": "🎧"
+ },
+ {
+  "id": "fashion",
+  "name": "Fashion",
+  "icon": "👕"
+ },
+ {
+  "id": "books",
+  "name": "Books",
+  "icon": "📚"
+ },
+ {
+  "id": "home",
+  "name": "Home & Kitchen",
+  "icon": "🏠"
+ }
+]
